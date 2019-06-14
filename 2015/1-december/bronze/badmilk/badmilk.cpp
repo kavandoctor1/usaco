@@ -16,8 +16,8 @@ int main() {
     }
     int p,m,t;
     for(auto i = 0; i < D; i++){
-        fin>>p>>m>>t;
-        p=p-1;
+        fin >> p >> m >>t;
+        p = p-1;
         pair<int,int> pai(t,m);
         drink[p].push_back(pai);
         dronk[p].push_back(m);
