@@ -33,8 +33,8 @@ int main() {
     int choose;
     for(auto i = 0; i < S; i++){
         fin>>p>>t;
-        p=p-1;
-        if(i==0){
+        p = p-1;
+        if(i == 0){
             choose = p;
         }
         for(auto j = 0; j<drink[p].size(); ++j){
