@@ -7,7 +7,7 @@ int countleft(vector<int> bales, int i, int range){
     if(i==0){
         return 1;
     }
-    if(bales[i] -range >bales[i-1]){
+    if(bales[i] - range > bales[i-1]){
         return 1;
     }
     return 1+countleft(bales,i-1,range+1);
