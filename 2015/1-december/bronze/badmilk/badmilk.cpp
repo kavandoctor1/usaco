@@ -12,7 +12,7 @@ int main() {
         drink.push_back(temp);
         vector<int> tem;
         dronk.push_back(tem);
-        
+
     }
     int p,m,t;
     for(auto i = 0; i < D; i++){
@@ -51,7 +51,7 @@ int main() {
         }
         cout<<"\n";
     }
-    
+
     vector<int> possible;
     for(auto x = 0; x< sick[choose].size();x++){
         bool truth = true;
@@ -74,7 +74,7 @@ int main() {
         }
         cout<<"\n";
     }
-    
+
     auto count = 0;
     for(auto p = 0; p < possible.size();p++){
         cout<<possible[p]<<"\n";
