@@ -44,7 +44,7 @@ int main() {
             sick[p].push_back(drink[p][j].second);
         }
     }
-    cout<<"Sick\n";
+    cout << "Sick\n";
     for(auto a = 0; a < sick.size(); a++){
         for(auto b = 0; b < sick[a].size(); b++){
             cout<<sick[a][b]<<" ";
