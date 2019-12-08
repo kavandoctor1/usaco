@@ -1,4 +1,4 @@
-fin = open("2.in", "r")
+fin = open("haybales.in", "r")
 fout = open("haybales.out", "w")
 N,Q = map(int, fin.readline().strip().split())
 bales = list(map(int, fin.readline().strip().split()))

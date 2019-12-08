@@ -1,7 +1,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 ofstream fout ("cbarn.out");
-ifstream fin ("8.in");
+ifstream fin ("cbarn.in");
 #define For(x) for(int i = 0; i < x; i++)
 #define Forv(vector) for(auto& i : vector)
 int main(){
