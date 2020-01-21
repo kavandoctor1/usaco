@@ -12,5 +12,5 @@ ifstream fin ("bcount.in");
 int main(){
     int a,b;
     fin>>a>>b;
-    
+    vector<int> uno, dos, tre
 }
