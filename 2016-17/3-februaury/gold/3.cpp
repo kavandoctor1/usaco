@@ -15,21 +15,27 @@ ofstream fout ("circlecross.out");
 ifstream fin ("circlecross.in");
 
 int main(){
+    cout<<'1'<<'\n';
     int N; fin>>N;
     int circle[2*N];
-    cout<<N;
+    cout<<N<<'\n';
     For(2*N){
         fin>>circle[i];
+        // cout<<circle[i]<<'\n';
     }
     bool works[N+1][N+1];
     memset(works,false,sizeof(works));
+
     For(2*N){
         int x = circle[i];
         bool part[N+1];
         memset(part,false,sizeof(part));
         int j = i+1;
         while(circle[j]!=x){
+            j%= 2*N;
             part[circle[j]] ^= true;
+            j++;
+            j%= 2*N;
         }
         For2(N+1){
             works[x][j] = part[j];
@@ -41,6 +47,7 @@ int main(){
             if(works[i][j]){ ans ++;}
         }
     }
-    cout<<ans<<'\n';
-    fout<<ans<<'\n';
+    int x = ans/2;
+    cout<<x<<'\n';
+    fout<<x<<'\n';
 }
